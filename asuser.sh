@@ -3,10 +3,10 @@
 # Check if the current user is root
 if [ "$(id -u)" -eq 0 ]; then
     # If the user is root, run the program directly
-    curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | bash
+    #curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | bash
 else
     # If the user is not root, run the program using sudo
-    curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | sudo bash
+    #curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | sudo bash
 fi
 
 lines_to_append='
