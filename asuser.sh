@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Check if the current user is root
-if [ "$(id -u)" -eq 0 ]; then
+#if [ "$(id -u)" -eq 0 ]; then
     # If the user is root, run the program directly
     #curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | bash
-else
+#else
     # If the user is not root, run the program using sudo
     #curl -sSL https://raw.githubusercontent.com/imholte/bashinit/main/asroot.sh | sudo bash
-fi
+#fi
 
 lines_to_append='
 #eval `dircolors ~/.dir_colors/dircolors`
