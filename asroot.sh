@@ -3,13 +3,12 @@
 apt update
 apt install nala
 
-/usr/local/share/fonts/
-fc-cache -fv
+cd /tmp
 
 # Install Nerd Font
-cd /tmp
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/IosevkaTerm.tar.xz
 tar -xvf IosevkaTerm.tar.xz -C /usr/local/share/fonts/
+fc-cache -fv
 
 #install eza
 nala install -y gpg
